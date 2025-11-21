@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+
+    <!--- LINK TO CSS FILE --->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-----LINK GOOGLE FONT----->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+    
     <style>
         body{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -65,98 +74,102 @@
 <body>
     <!--HEADER & NAVIGATION-->
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
+                <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!--HOME SECTION-->
-    <section id="home">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hello! my name is <strong>Uzumefune ChukwuJindu Victor</strong>,a web developer passionate about creating interactive and user-friendly websites.</p>
-        <audio width="100%" controls>
+    <section id="home" class="section home-section">
+        <h1 class="section-title">Welcome to My Portfolio</h1>
+        <p class="intro-text"> Hello! my name is <strong>Uzumefune ChukwuJindu Victor</strong>,a web developer passionate about creating interactive and user-friendly websites.</p>
+
+        <audio class="audio-player" controls>
             <source src="song.mp3" type="audio/mp3">
         </audio>
     </section>
 
     <!--ABOUT SECTION-->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a front-end developer with the love for coding and designing. I enjoy learning new technologies and solving problems through creative web solution.</p>
-        <h3>My Hobbies:</h3>
-        <ul>
-            <li>Coding and Web designing</li>
-            <li>Watching Football games</li>
-            <li>Listening to Music</li>
-            <li>Surfing through internet,etc</li>
+    <section id="about" class="section about-section">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-text">I'm a front-end developer with the love for coding and designing. I enjoy learning new technologies and solving problems through creative web solution.</p>
+
+        <h3 class="sub-title">My Hobbies:</h3>
+        <ul class="hobby-list">
+            <li class="hobby-item">Coding and Web designing</li>
+            <li class="hobby-item">Watching Football games</li>
+            <li class="hobby-item">Listening to Music</li>
+            <li class="hobby-item">Surfing through internet</li>
         </ul>
     </section>
 
     <!--WORK SECTION-->
-    <section id="work">
-        <h2>My Work</h2>
-        <p>Here are a few of my projects</p>
-        <ul>
-            
-            <li><a href="projects/project1.html">Portfolio Website</a></li>
-            <li><a href="projects/project2.html">Personal Blog</a></li>
-            <li><a href="projects/project3.html">E-commerce</a></li>
+    <section id="work" class="section work-section">
+        <h2 class="section-title">My Work</h2>
+        <p class="section-description">Here are a few of my projects</p>
+
+        <ul class="project-list">
+            <li class="project-item"><a href="projects/project1.html" class="project-link">Portfolio Website</a></li>
+            <li class="project-item"><a href="projects/project2.html" class="project-link">Personal Blog</a></li>
+            <li class="project-item"><a href="projects/project3.html" class="project-link">E-commerce</a></li>
         </ul>
     </section>
 
     <!--RESUME SECTION-->
-    <section id="resume">
-        <h2>Resume</h2>
-        <p>Below is the summary of my experience and education:</p>
-        <table>
+    <section id="resume" class="section resume-section">
+        <h2 class="section-title">Resume</h2>
+        <p class="resume-description">Below is the summary of my experience and education:</p>
+        <table class="resume-table">
             <thead>
                 <tr>
-                    <th>Year</th>
-                    <th> Position/Degree</th>
-                    <th>Institution/Company</th>
+                    <th class="table-header">Year</th>
+                    <th class="table-header"> Position/Degree</th>
+                    <th class="table-header">Institution/Company</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>2022-2024</td>
-                    <td>Front-End Developer</td>
-                    <td>Go My Code</td>
+                    <td class="table-data">2022-2024</td>
+                    <td class="table-data">Front-End Developer</td>
+                    <td class="table-data">Go My Code</td>
                 </tr>
                 <tr>
-                    <td>2016-2020</td>
-                    <td>B.Sc. in Public Administration</td>
-                    <td>Ambrose Alli University,Ekpoma</td>
+                    <td class="table-data">2016-2020</td>
+                    <td class="table-data">B.Sc. in Public Administration</td>
+                    <td class="table-data">Ambrose Alli University,Ekpoma</td>
                 </tr>
             </tbody>
         </table>
     </section>
 
     <!--CONTACT SECTION-->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to get in touch using the form below:</p>
-            <form action="submit_form" method="post">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
+    <section id="contact" class="section contact-section">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="contact-text">Feel free to get in touch using the form below:</p>
 
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
+            <form action="submit_form" method="post" class="contact-form">
+                <label for="name" class="form-label">Full Name:</label>
+                <input type="text" id="name" name="name" class="form-input" required>
 
-                <label for="message">Message:</label>
-                <textarea name="message" id="message" rows="5" required></textarea>
+                <label for="email" class="form-label">Email Address:</label>
+                <input type="email" id="email" name="email" class="form-input" required>
 
-                <button type="submit">Send Message</button>
+                <label for="message" class="form label">Message:</label>
+                <textarea name="message" id="message" class="form-textarea" rows="5" required></textarea>
+
+                <button type="submit" class="form-button">Send Message</button>
             </form>
         </section>
+
     <!--FOOTER-->
-        <footer>
-            <p>&copy;2025 ChukwuJindu Victor. All rights reserved.</p>
+        <footer class="footer">
+            <p class="footer-text">&copy; 2025 ChukwuJindu Victor. All rights reserved.</p>
         </footer>
 </body>
 </html>        

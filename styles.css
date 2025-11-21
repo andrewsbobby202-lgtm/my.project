@@ -1,0 +1,205 @@
+/* ----------------------- */
+/* GLOBAL STYLES           */
+/* ----------------------- */
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: color #42b7b3; 
+    line-height: 1.6;
+    }
+
+.section{
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px 30px;
+    background: #37774b;
+    border-radius: 20px;
+    color: #fff;
+} 
+
+/* ---------------------- */
+/*     HEADER & NAVBAR    */
+/* ---------------------- */
+
+.header{
+    background: white;
+    padding:10px 0; 
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover{
+    color: #0b3d0b;
+    text-decoration: underline;
+}
+
+/* --------------------- */
+/*   HOME SECTION        */
+/* ----------------------*/
+
+.home-section  .section-title{
+    font-size: 32px;
+    text-align: center;
+} 
+
+.audio-player{
+    display: block;
+    margin: 20px;
+    width: 50%;
+}
+
+/* -------------------- */
+/*   ABOUT SECTION      */
+/* ---------------------*/
+
+.sub-title{
+    margin: 20px;
+    font-size: 20px;
+}
+
+.hobby-list{
+    list-style: square;
+    margin-left: 20px;
+}
+
+.hobby-item{
+    margin-bottom: 8px;
+}
+
+/* ------------------- */
+/*   WORK SECTION      */
+/* --------------------*/
+
+.project-list{
+    list-style: none;
+    padding: 0;
+}
+
+.project-item{
+    margin-bottom: 10x;
+}
+
+.project-link{
+    color: #42b7b3;;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.project-link:hover{
+    color: #ffffff;
+    text-decoration:underline;
+}
+
+/* ------------------------ */
+/*  RESUME SECTION          */
+/* ------------------------ */
+
+.resume-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-header{
+    background: #2f5f3c;
+    padding: 10px;
+    color: #fff;
+}
+
+.table-data{
+    border: 1px solid #ddd;
+    padding: 8px;
+    background: #42b7b3;
+    color: #fff;
+}
+
+/* ---------------------------- */
+/* CONTACT SECTION              */
+/* ---------------------------- */
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-label{
+    font-weight: bold;
+}
+
+.form-input, .form-textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+
+.form-button{
+    background-color: #fff59e;
+    color: #000;
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.form-button:hover{
+    background-color: #fff59e;
+}
+
+/*---------------------------*/
+/*       FOOTER              */
+/* ------------------------- */
+
+.footer{
+    background-color: gray;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-text{
+    color: #051c05;
+    font-size: 14px;
+}
+
+
+
+/* nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+} */
